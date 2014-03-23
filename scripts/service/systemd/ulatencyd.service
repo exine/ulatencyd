@@ -6,7 +6,7 @@ Description=Latency reducing daemon for linux
 [Service]
 Type=dbus
 BusName=org.quamquam.ulatencyd
-ExecStart=/usr/sbin/ulatencyd
+ExecStart=/usr/bin/ulatencyd
 Restart=always
 UMask=022
 

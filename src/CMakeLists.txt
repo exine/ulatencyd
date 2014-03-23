@@ -30,7 +30,7 @@ target_link_libraries (ulatencyd dl ${MY_LUA_LIBRARIES}
 configure_file(ulatencyd_cleanup.sh.tmpl ulatencyd_cleanup.sh)
 
 install(TARGETS ulatencyd 
-        RUNTIME DESTINATION sbin)
+        RUNTIME DESTINATION bin)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/ulatencyd_cleanup.sh
         PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ 
                     GROUP_EXECUTE WORLD_READ WORLD_EXECUTE
